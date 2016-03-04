@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20160304171111) do
 
   create_table "steps", force: :cascade do |t|
@@ -18,6 +19,17 @@ ActiveRecord::Schema.define(version: 20160304171111) do
     t.date     "date"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+
+  end
+
+# ActiveRecord::Schema.define(version: 20160304170720) do
+
+  create_table "weigh_ins", force: :cascade do |t|
+    t.decimal  "weight"
+    t.date     "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+
   end
 
 end
