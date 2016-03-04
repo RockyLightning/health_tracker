@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root 'steps#index'
   resources :steps
   resources :weigh_ins
 
