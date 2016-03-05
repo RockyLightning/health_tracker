@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Exercise id:</strong>
+  <%= @workout.exercise_id %>
+</p>
+
+<p>
+  <strong>Calories burned:</strong>
+  <%= @workout.cals_burned %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @workout.date %>
+</p>
+
+<%= link_to 'Edit', edit_workout_path(@workout) %> |
+<%= link_to 'Back', workouts_path %>
