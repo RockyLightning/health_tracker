@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  get 'exercise_types/index'
+
+  get 'exercise_types/show'
+
+  get 'exercise_types/create'
+
+  get 'exercise_types/edit'
+
+  get 'exercise_types/update'
+
+  get 'exercise_types/destroy'
+
   # get 'workouts' => 'workouts/index'
   #
   # get 'workout/show'
