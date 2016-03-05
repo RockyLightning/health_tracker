@@ -1,34 +1,13 @@
 Rails.application.routes.draw do
 
-  # get 'exercise_types/index'
-  #
-  # get 'exercise_types/show'
-  #
-  # get 'exercise_types/create'
-  #
-  # get 'exercise_types/edit'
-  #
-  # get 'exercise_types/update'
-  #
-  # get 'exercise_types/destroy'
 
-  # get 'workouts' => 'workouts/index'
-  #
-  # get 'workout/show'
-  #
-  # post 'workout/create'
-  #
-  # patch 'workout/edit'
-  #
-  # patch 'workout/update'
-  #
-  # delete 'workout/destroy'
 
   root 'steps#index'
   resources :steps
   resources :weigh_ins
   resources :workouts
   resources :exercise_types
+  resources :cals
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
