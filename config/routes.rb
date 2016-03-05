@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
 
-  get 'cals/index'
-
-  get 'cals/show'
-
-  get 'cals/create'
-
-  get 'cals/edit'
-
-  get 'cals/update'
-
-  get 'cals/destroy'
+  # get 'cals/index'
+  #
+  # get 'cals/show'
+  #
+  # get 'cals/create'
+  #
+  # get 'cals/edit'
+  #
+  # get 'cals/update'
+  #
+  # get 'cals/destroy'
 
   # get 'workouts' => 'workouts/index'
   #
@@ -28,7 +28,7 @@ Rails.application.routes.draw do
   resources :steps
   resources :weigh_ins
   resources :workouts
-
+  resources :cals
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
