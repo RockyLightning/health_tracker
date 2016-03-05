@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  get 'cals/index'
+
+  get 'cals/show'
+
+  get 'cals/create'
+
+  get 'cals/edit'
+
+  get 'cals/update'
+
+  get 'cals/destroy'
+
   # get 'workouts' => 'workouts/index'
   #
   # get 'workout/show'
