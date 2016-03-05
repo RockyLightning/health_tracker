@@ -16,13 +16,13 @@ class ExerciseTypesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create exercise_tye" do
-    assert_difference('ExerciseType.count') do
-      post :create, exercise_type: { name: @exercise_type.name }
-    end
-
-    assert_redirected_to exercise_type_path(assigns(:exercise_type))
-  end
+  # test "should create exercise_tye" do
+  #   assert_difference('ExerciseType.count') do
+  #     post :create, exercise_type: { name: @exercise_type.name }
+  #   end
+  #
+  #   assert_redirected_to exercise_type_path(assigns(:exercise_type))
+  # end
 
   test "should show exercise_type" do
     get :show, id: @exercise_type
