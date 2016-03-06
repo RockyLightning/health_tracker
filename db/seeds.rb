@@ -7,11 +7,30 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-# 10.times do
-#      Cal.create(
-#         cals_burned: Faker::Internet.email,
-#         password: Faker::Internen.password,
-#         fname: Faker::Name.first_name,
-#         lname: Faker::Name.last_name
-#       )
-# end
+10.times do
+     Step.create(
+        steps_taken: rand(2000..20000),
+        date: Time.at(rand * Time.now.to_i).to_date,
+      )
+end
+
+10.times do
+     WeighIn.create(
+        weight: rand(100..300),
+        date: Time.at(rand * Time.now.to_i).to_date,
+      )
+end
+
+10.times do
+     Cal.create(
+        cals_consumed: rand(0..1000),
+        date: Time.at(rand * Time.now.to_i).to_date,
+      )
+end
+
+ExerciseType.create(name: 'Aerobic')
+ExerciseType.create(name: 'Anaerobic')
+ExerciseType.create(name: 'Endurance')
+ExerciseType.create(name: 'Strength')
+ExerciseType.create(name: 'Flexibility')
+ExerciseType.create(name: 'Cardio')

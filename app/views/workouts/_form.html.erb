@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :exercise_id %><br>
-    <%= f.collection_select(:exercise_type_id, ExerciseType.all, :id, :name, { :prompt => 'Select an exercise type', :selected => @workout.exercise_id}, {class: 'workout'}) %>
+    <%= f.collection_select(:exercise_id, ExerciseType.all, :id, :name, { :prompt => true, :selected => @workout.exercise_id}, {class: 'exercise_type'}) %>
   </div>
   <div class="field">
     <%= f.label :cals_burned %><br>
