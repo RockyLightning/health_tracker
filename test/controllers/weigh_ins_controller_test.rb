@@ -16,13 +16,13 @@ class WeighInsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create weigh_in" do
-    assert_difference('WeighIn.count') do
-      post :create, weigh_in: { date: @weigh_in.date, weight: @weigh_in.weight }
-    end
-
-    assert_redirected_to weigh_in_path(assigns(:weigh_in))
-  end
+  # test "should create weigh_in" do
+  #   assert_difference('WeighIn.count') do
+  #     post :create, weigh_in: { date: @weigh_in.date, weight: @weigh_in.weight }
+  #   end
+  #
+  #   assert_redirected_to weigh_in_path(assigns(:weigh_in))
+  # end
 
   test "should show weigh_in" do
     get :show, id: @weigh_in
@@ -34,10 +34,10 @@ class WeighInsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should update weigh_in" do
-    patch :update, id: @weigh_in, weigh_in: { date: @weigh_in.date, weight: @weigh_in.weight }
-    assert_redirected_to weigh_in_path(assigns(:weigh_in))
-  end
+  # test "should update weigh_in" do
+  #   patch :update, id: @weigh_in, weigh_in: { date: @weigh_in.date, weight: @weigh_in.weight }
+  #   assert_redirected_to weigh_in_path(assigns(:weigh_in))
+  # end
 
   test "should destroy weigh_in" do
     assert_difference('WeighIn.count', -1) do
