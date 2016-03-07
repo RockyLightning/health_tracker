@@ -2,10 +2,15 @@
 
 one:
   exercise_id: 1
-  cals_burned: 1
+  cals_burned: 175
   date: 2016-03-05
 
 two:
-  exercise_id: 1
-  cals_burned: 1
+  exercise_id: 2
+  cals_burned: 250
+  date: 2016-03-05
+
+three:
+  exercise_id: 3
+  cals_burned: 495
   date: 2016-03-05
