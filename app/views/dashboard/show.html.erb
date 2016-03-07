@@ -1,8 +1,65 @@
-<h1>Dashboard</h1>
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
 
-<div id="links"><p><em><u>Links</u></em></p>
-  <p>Click <%= link_to 'here', workouts_path %> to view your workouts.</p>
-  <p>Click <%= link_to 'here', steps_path %> to view steps taken.</p>
-  <p>Click <%= link_to 'here', cals_path %> to view your calories burned.</p>
-  <p>Click <%= link_to 'here', weigh_ins_path %> to view your weigh-in history.</p>
-</div>
+Name       : Artifice
+Description: A two-column, fixed-width design with a dark color scheme.
+Version    : 1.0
+Released   : 20120813
+-->
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<title>DASHBOARD</title>
+		<link href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Kreon" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="logo">
+					<h1>Hello! Welcome to your Dashboard.</h1>
+				</div>
+			</div>
+      <div>
+        <h2>Today is: &nbsp <%=Time.now.strftime("%A %B %d, %Y")%></h2>
+			<div id="page">
+				<div id="content">
+					<div class="box">
+            <ul>
+              <li class="first"><h2>Stats</h2></li>
+              <li><h3>Your net calories for today are: (calories go here)</h3></li>
+              <li><h3>On average, you walk (avg steps goes here) steps per day</h3></li>
+              <li><h3>Your overall change in weight is: (change in weight goes here)</h3></li>
+            </ul>
+          </div>
+					<br class="clearfix" />
+				</div>
+				<div id="sidebar2">
+					<div class="box">
+						<h2>Links</h2>
+            <p>
+  						Use the following links to see your weight, step, caloric-intake, and workout histories.
+						</p>
+						<ul class="list">
+							<li class="first">Click <%= link_to 'here', workouts_path %> to view your workouts.</li>
+							<li>Click <%= link_to 'here', steps_path %> to view steps taken.</li>
+							<li>Click <%= link_to 'here', cals_path %> to view your calories burned.</li>
+							<li class="last">Click <%= link_to 'here', weigh_ins_path %> to view your weigh-in history.</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="sidebar1">
+				</div>
+				<br class="clearfix" />
+			</div>
+		</div>
+		<div id="footer">
+			&copy; Untitled | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a> | Images by <a href="http://pdphoto.org/">PDPhoto</a>
+		</div>
+	</body>
+</html>
