@@ -1,6 +1,8 @@
 class DashboardController < ApplicationController
   def show
-    # today = Time.now.strftime("%Y/%m/%d")
-    # @calory =
+    @burned = Workout.new.stats
+    @consumed = Cal.new.stats
+    @stepped = Step.new.stats
+    @weight = WeighIn.new.stats
   end
 end
