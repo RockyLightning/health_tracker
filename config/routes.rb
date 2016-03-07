@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 
 
-  # get 'dashboard/show'
+  get 'dashboard/show'
 
   root 'dashboard#show'
   resources :steps
