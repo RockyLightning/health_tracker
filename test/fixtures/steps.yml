@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  steps_taken: 1
+  steps_taken: 120
   date: 2016-03-04
 
 two:
-  steps_taken: 1
+  steps_taken: 545
+  date: 2016-03-04
+
+three:
+  steps_taken: 975
   date: 2016-03-04

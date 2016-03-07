@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  cals_consumed: 1
+  cals_consumed: 200
   date: 2016-03-05
 
 two:
-  cals_consumed: 1
+  cals_consumed: 500
+  date: 2016-03-05
+
+three:
+  cals_consumed: 1000
   date: 2016-03-05
