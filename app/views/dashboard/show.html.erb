@@ -9,15 +9,13 @@ Version    : 1.0
 Released   : 20120813
 -->
 <html>
-	<head>
+	<!-- <head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
 		<title>DASHBOARD</title>
 		<link href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet" type="text/css" />
 		<link href="http://fonts.googleapis.com/css?family=Kreon" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
-	</head>
+	</head> -->
 	<body>
 		<div id="wrapper">
 			<div id="header">
@@ -32,9 +30,11 @@ Released   : 20120813
 					<div class="box">
             <ul>
               <li class="first"><h2>Stats</h2></li>
-              <li><h3>Your net calories for today are: (calories go here)</h3></li>
-              <li><h3>On average, you walk (avg steps goes here) steps per day</h3></li>
-              <li><h3>Your overall change in weight is: (change in weight goes here)</h3></li>
+              <li><h3>You've burned <span id="data"><%=@burned[:burned]%></span> calories today.</br>
+											You've consumed <span id="data"> <%=@consumed[:intake]%> </span>calories today.</br>
+										 	Your total caloric intake for today:&nbsp <span id="data"><%=@consumed[:intake] - @burned[:burned]%></span></h3></li>
+              <li><h3>On average, you walk <span id="data"><%=@stepped[:avg_steps]%></span> steps per day</h3></li>
+              <li><h3>Your overall change in weight is: <span id="data"><%=@weight[:diff]%></span></h3></li>
             </ul>
           </div>
 					<br class="clearfix" />
@@ -59,7 +59,7 @@ Released   : 20120813
 			</div>
 		</div>
 		<div id="footer">
-			&copy; Untitled | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a> | Images by <a href="http://pdphoto.org/">PDPhoto</a>
+			&copy; Untitled | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>
 		</div>
 	</body>
 </html>
