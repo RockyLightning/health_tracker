@@ -1,7 +1,11 @@
 class Step < ActiveRecord::Base
   def avg_steps
     s = Step.sum(:steps_taken)
-    avg = s/Step.count
+    unless Step.count == 0
+      avg = s/Step.count
+    else
+      avg = 0
+    end
   end
 
   def stats
